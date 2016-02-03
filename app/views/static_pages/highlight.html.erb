@@ -4,3 +4,5 @@
 
 <% # Read some html from a file and pass it to our syntax_highlight helper %>
 <%= syntax_highlight(File.read(Rails.root + "public/example.html")) %>
+
+<%= syntax_highlight("<div class='foo'>...</div>") %>
